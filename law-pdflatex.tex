@@ -24,14 +24,14 @@
       \tableofcontents[currentsection]
     \end{frame}}
 
-    \section{Light Frames}
-    \subsection{Blind Text}
-    \begin{frame}{Jabberwocky}
-      \framesubtitle{Lewis Carroll}%
+    \section{Machine Learning}
+    \subsection{What is machine learning}
+    \begin{frame}{Machine Learning}
+      \framesubtitle{at a glance}%
       \begin{tikzpicture}[overlay,remember picture]
         \node[anchor=south east,xshift=-30pt,yshift=35pt]
           at (current page.south east) {
-            \includegraphics[width=35mm]{resources/jabberwocky-light}
+            \includegraphics[width=35mm]{resources/wall-e}
           };
       \end{tikzpicture}%
       'Twas brillig, and the slithy toves\\
@@ -75,7 +75,10 @@
       dog. DJs flock by when MTV ax quiz prog. “Now fax quiz Jack!”}
     \end{frame}
 
-    \subsection{Structuring Elements}
+    \subsection{Types of learning}
+    \begin{frame}{Artificial Intelligence Hierarchy}
+        \includegraphics{resources/hierarchy}
+    \end{frame}
     \begin{frame}[label=simmonshall]{Text blocks}
       \framesubtitle{In plain, example, and \alert{alert} flavour}
       \alert{This text} is highlighted.
@@ -104,7 +107,7 @@
       \end{proof}
     \end{frame}
 
-    \subsection{Numerals and Mathematics}
+    \subsection{Deep Learning}
     \begin{frame}[label=math]{Numerals and Mathematics}
       \framesubtitle{Formulae, equations, and expressions}
       \begin{columns}[onlytextwidth]
@@ -152,7 +155,6 @@
       \end{columns}
     \end{frame}
 
-    \subsection{Figures and Code Listings}
     \begin{frame}[label=figs1]{Figures}
       \framesubtitle{Tables, graphs, and images}
       \begin{table}[!b]
@@ -268,7 +270,7 @@
       \sleepSort
     \end{frame}
 
-    \subsection{Citations and Bibliography}
+    \subsection{Convolutional Neural Networks}
     \begin{frame}[label=citations]{Citations}
       \framesubtitle{\TeX, \LaTeX, and Beamer}
 
@@ -291,13 +293,24 @@
       Class}~\cite{tantau04}.
     \end{frame}
 
+    \section{Cancers}
+    \subsection{What is cancer ?!}
+    \subsection{Types of cancers}
+    \section{Deep Learning revisited - Cancer detection}
+    \subsection{Traditional cancer detection}
+    \subsection{Deep learning for cancer detection}
+    \subsection{Practical example}
+    \subsection{Risks \& warns}
+    \begin{frame}
+      test
+    \end{frame}
+
     \begin{frame}[label=bibliography]{Bibliography}
       \framesubtitle{\TeX, \LaTeX, and Beamer}
       \begin{thebibliography}{9}
-        \bibitem{knuth84}
-            Donald~E.~Knuth.
-            \emph{The \TeX book}.
-            Addison-Wesley, 1984.
+        \bibitem{wikipedia}
+          The free encyclopedia at 
+          \href{https://wikipedia.org}{wikipedia.org}
         \bibitem{lamport94}
             Leslie~Lamport.
             \emph{\LaTeX : A Document Preparation System}.
@@ -318,58 +331,58 @@
       \end{thebibliography}
     \end{frame}
 
-  \section{Dark Frames}
-  \begin{darkframes}
-    \subsection{Blind Text}
-    \begin{frame}{Jabberwocky}
-      \framesubtitle{Lewis Carroll}%
-      \begin{tikzpicture}[overlay,remember picture]
-        \node[anchor=south east,xshift=-30pt,yshift=35pt]
-          at (current page.south east) {
-            \includegraphics[width=35mm]{resources/jabberwocky-dark}
-          };
-      \end{tikzpicture}%
-      'Twas brillig, and the slithy toves\\
-      Did gyre and gimble in the wabe;\\
-      All mimsy were the borogoves,\\
-      And the mome raths outgrabe.\\\bigskip
+%   \section{Dark Frames}
+%   \begin{darkframes}
+%     \subsection{Blind Text}
+%     \begin{frame}{Jabberwocky}
+%       \framesubtitle{Lewis Carroll}%
+%       \begin{tikzpicture}[overlay,remember picture]
+%         \node[anchor=south east,xshift=-30pt,yshift=35pt]
+%           at (current page.south east) {
+%             \includegraphics[width=35mm]{resources/jabberwocky-dark}
+%           };
+%       \end{tikzpicture}%
+%       'Twas brillig, and the slithy toves\\
+%       Did gyre and gimble in the wabe;\\
+%       All mimsy were the borogoves,\\
+%       And the mome raths outgrabe.\\\bigskip
 
-      “Beware the Jabberwock, my son!\\
-      The jaws that bite, the claws that catch!\\
-      Beware the Jubjub bird, and shun\\
-      The frumious Bandersnatch!”\\
-    \end{frame}
-    \againframe{lists}
-    \subsection{Structuring Elements}
-    \againframe{simmonshall}
-    \againframe{proof}
-    \subsection{Numerals and Mathematics}
-    \againframe{math}
-    \subsection{Figures and Code Listings}
-    \againframe{figs1}
-    \againframe{figs2}
-    \defverbatim[colored]\sleepSort{
-      \begin{lstlisting}[language=C,tabsize=2]
-#include <stdio.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/wait.h>
+%       “Beware the Jabberwock, my son!\\
+%       The jaws that bite, the claws that catch!\\
+%       Beware the Jubjub bird, and shun\\
+%       The frumious Bandersnatch!”\\
+%     \end{frame}
+%     \againframe{lists}
+%     \subsection{Structuring Elements}
+%     \againframe{simmonshall}
+%     \againframe{proof}
+%     \subsection{Numerals and Mathematics}
+%     \againframe{math}
+%     \subsection{Figures and Code Listings}
+%     \againframe{figs1}
+%     \againframe{figs2}
+%     \defverbatim[colored]\sleepSort{
+%       \begin{lstlisting}[language=C,tabsize=2]
+% #include <stdio.h>
+% #include <unistd.h>
+% #include <sys/types.h>
+% #include <sys/wait.h>
 
-// This is a comment
-int main(int argc, char **argv)
-{
-        while (--c > 1 && !fork());
-        sleep(c = atoi(v[c]));
-        printf("%d\n", c);
-        wait(0);
-        return 0;
-}
-    \end{lstlisting}}
-  \begin{frame}{Code listings}{An example source code in C}
-      \sleepSort
-    \end{frame}
-    \subsection{Citations and Bibliography}
-    \againframe{citations}
-    \againframe{bibliography}
-  \end{darkframes}
+% // This is a comment
+% int main(int argc, char **argv)
+% {
+%         while (--c > 1 && !fork());
+%         sleep(c = atoi(v[c]));
+%         printf("%d\n", c);
+%         wait(0);
+%         return 0;
+% }
+%     \end{lstlisting}}
+%   \begin{frame}{Code listings}{An example source code in C}
+%       \sleepSort
+%     \end{frame}
+%     \subsection{Citations and Bibliography}
+%     \againframe{citations}
+%     \againframe{bibliography}
+%   \end{darkframes}
 \end{document}
