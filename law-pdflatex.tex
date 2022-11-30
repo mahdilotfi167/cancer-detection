@@ -11,13 +11,13 @@
 \usepackage{tabularx}
 \usepackage{tikz}      % Diagram
 \usetikzlibrary{calc, shapes, backgrounds}
+\usepackage{epigraph}
 \usepackage{amsmath, amssymb}
 \usepackage{url}       % `\url`s
 \usepackage{listings}  % Code listing
 \begin{document}
   % \shorthandoff{-}
   \frame[c]{\maketitle}
-
   \AtBeginSection[]{% Printt an outline at the beginning of sections
     \begin{frame}<beamer>
       \frametitle{Outline for Section \thesection}
@@ -26,7 +26,7 @@
 
     \section{Machine Learning}
     \subsection{What Is Machine Learning}
-    \begin{frame}{Machine Learning}
+    \begin{frame}[t]{Machine Learning}
       \framesubtitle{at a glance}%
       \begin{tikzpicture}[overlay,remember picture]
         \node[anchor=south east,xshift=-30pt,yshift=35pt]
@@ -34,9 +34,16 @@
             \includegraphics[width=35mm]{resources/wall-e}
           };
       \end{tikzpicture}%
-      \parbox{50mm}{The difficulties faced by systems relying on hard-coded knowledge suggest that AI systems need the ability to acquire their own knowledge, by extracting patterns from raw data.\\ This capability is known as\\\textbf{machine learning}~\cite{dlb}.}
+      \begin{quote}
+        field of study that gives computers the ability to learn without being explicitly programmed.
+        \hfill {\tiny —Arthur Samuel, 1959}
+      \end{quote}
+      Machine Learning is the science (and art) of programming computers so they can \textit{learn from data}. \\
+      \vspace{8mm}
+      \parbox{0.55\textwidth}{
+      Your spam filter is a Machine Learning program that, given examples of spam emails and examples of regular emails, can learn to flag spam.
+      }
     \end{frame}
-
     \begin{frame}[label=lists]{Lists and locales}
       \framesubtitle{Lorem ipsum dolor sit amet}
       \begin{columns}[onlytextwidth]
@@ -65,8 +72,7 @@
       \justifying
       {\uselanguage{english}The quick, brown fox jumps over a lazy
       dog. DJs flock by when MTV ax quiz prog. “Now fax quiz Jack!”}
-    \end{frame}
-
+    \end{frame} 
     \subsection{Types of Learning}
     \begin{frame}{Artificial Intelligence Hierarchy}
         \includegraphics{resources/hierarchy}
@@ -303,6 +309,8 @@
         \bibitem{wikipedia}
           The free encyclopedia at 
           \href{https://wikipedia.org}{wikipedia.org}
+        \bibitem{handson}
+        Hands-On Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems
         \bibitem{dlb}
           Deep Learning (Ian J. Goodfellow, Yoshua Bengio and Aaron Courville), MIT Press, 2016.
         \bibitem{MG94}
