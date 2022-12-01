@@ -381,13 +381,31 @@
 
     \section{Deep Learning Revisited: Cancer Detection}
     \subsection{Traditional Cancer Detection}
-    \begin{frame}{Cancer Detection}
-      \framesubtitle{how cancer is diagnosed}
+    \begin{frame}[t]{Cancer Detection}
+      \framesubtitle{how cancer is diagnosed}%
+      \begin{tikzpicture}[overlay,remember picture]
+        \node[anchor=south east,xshift=-30pt,yshift=35pt]
+          at (current page.south east) {
+            \includegraphics[width=40mm]{resources/male-doctor-elderly-female-patient-article}
+          };
+      \end{tikzpicture}%
       \begin{quote}
         Diagnosing cancer at its earliest stages often provides the best chance for a cure.
       \end{quote}
+      If you have a symptom or a screening test result that suggests cancer, 
+      your doctor must find out whether it is due to cancer or some other cause. \\ 
+      \vspace{5mm}
+      \parbox{0.55\textwidth}{
+        The doctor may start by asking about your personal 
+        and family medical history and do a physical exam. 
+        The doctor also may order lab tests, imaging tests, 
+        or other tests or procedures.
+      }
     \end{frame}
-    \subsection{Deep Learning for Cancer Detection}
+    \subsection{Machine Learning for Cancer Detection}
+    \begin{frame}{Cancer Detection}
+      \framesubtitle{a modern approach}
+    \end{frame}
     \subsection{Practical Example}
     \begin{frame}[t]{Practical Example}
       \framesubtitle{ALL detection using tensorflow \& keras}
