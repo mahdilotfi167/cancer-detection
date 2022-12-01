@@ -27,7 +27,7 @@
     \section{Machine Learning}
     \subsection{What Is Machine Learning}
     \begin{frame}[t]{Machine Learning}
-      \framesubtitle{at a glance}%
+      \framesubtitle{a slightly general definition}%
       \begin{tikzpicture}[overlay,remember picture]
         \node[anchor=south east,xshift=-30pt,yshift=35pt]
           at (current page.south east) {
@@ -44,8 +44,9 @@
       Your spam filter is a Machine Learning program that, given examples of spam emails and examples of regular emails, can learn to flag spam.
       }
     \end{frame}
-    \begin{frame}[label=lists]{Lists and locales}
-      \framesubtitle{Lorem ipsum dolor sit amet}
+    \subsection{Types of Learning}
+    \begin{frame}[label=lists]{Types of Machine Learning Systems}
+      \framesubtitle{it is useful to classify ML algorithms in broad categories}
       \begin{columns}[onlytextwidth]
         \column{.5\textwidth}
           \begin{itemize}
@@ -73,7 +74,7 @@
       {\uselanguage{english}The quick, brown fox jumps over a lazy
       dog. DJs flock by when MTV ax quiz prog. “Now fax quiz Jack!”}
     \end{frame} 
-    \subsection{Types of Learning}
+
     \begin{frame}{Artificial Intelligence Hierarchy}
         \includegraphics{resources/hierarchy}
     \end{frame}
@@ -106,6 +107,45 @@
     \end{frame}
 
     \subsection{Deep Learning}
+    
+    \begin{frame}[t]{Representation Learning}
+      \framesubtitle{find best representation of our data}%
+      \begin{tikzpicture}[overlay,remember picture]
+        \node[anchor=south east,xshift=-30pt,yshift=35pt]
+          at (current page.south east) {
+            \includegraphics[width=35mm]{resources/wall-e}
+          };
+      \end{tikzpicture}%
+      \begin{quote}
+        field of study that gives computers the ability to learn without being explicitly programmed.
+        \hfill {\tiny —Arthur Samuel, 1959}
+      \end{quote}
+      Machine Learning is the science (and art) of programming computers so they can \textit{learn from data}. \\
+      \vspace{8mm}
+      \parbox{0.55\textwidth}{
+      Your spam filter is a Machine Learning program that, given examples of spam emails and examples of regular emails, can learn to flag spam.
+      }
+    \end{frame}
+
+    \begin{frame}[t]{Deep Learning}
+      \framesubtitle{a slightly general definition}%
+      \begin{tikzpicture}[overlay,remember picture]
+        \node[anchor=south east,xshift=-30pt,yshift=35pt]
+          at (current page.south east) {
+            \includegraphics[width=35mm]{resources/wall-e}
+          };
+      \end{tikzpicture}%
+      \begin{quote}
+        field of study that gives computers the ability to learn without being explicitly programmed.
+        \hfill {\tiny —Arthur Samuel, 1959}
+      \end{quote}
+      Machine Learning is the science (and art) of programming computers so they can \textit{learn from data}. \\
+      \vspace{8mm}
+      \parbox{0.55\textwidth}{
+      Your spam filter is a Machine Learning program that, given examples of spam emails and examples of regular emails, can learn to flag spam.
+      }
+    \end{frame}
+
     \begin{frame}[label=math]{Numerals and Mathematics}
       \framesubtitle{Formulae, equations, and expressions}
       \begin{columns}[onlytextwidth]
@@ -307,6 +347,35 @@
     \end{tikzpicture}%
     \end{frame}
     \subsection{Types of Cancers}
+
+    \begin{frame}{Types of Cancers}
+      \framesubtitle{an overview of common cancer types}
+      \begin{columns}[onlytextwidth]
+        \column{.5\textwidth}
+          \begin{itemize}
+            \item Bladder Cancer
+            \item Breast Cancer
+            \item Colon and Rectal Cancer
+            \item Endometrial Cancer
+            \item Kidney Cancer
+            \item Leukemia
+            \begin{itemize}
+              \item Acute Lymphoblastic Leukemia
+            \end{itemize}
+          \end{itemize}
+          \column{.5\textwidth}
+          \begin{itemize}
+            \item Liver Cancer
+            \item Lung Cancer
+            \item Melanoma
+            \item Non-Hodgkin Lymphoma
+            \item Pancreatic Cancer
+            \item Prostate Cancer
+            \item Thyroid Cancer  
+          \end{itemize}
+      \end{columns}
+    \end{frame} 
+
     \section{Deep Learning Revisited: Cancer Detection}
     \subsection{Traditional Cancer Detection}
     \subsection{Deep Learning for Cancer Detection}
@@ -326,10 +395,8 @@
         Hands-On Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems
         \bibitem{dlb}
           Deep Learning (Ian J. Goodfellow, Yoshua Bengio and Aaron Courville), MIT Press, 2016.
-        \bibitem{MG94}
-            M.~Goossens, F.~Mittelbach, and A.~Samarin.
-            \emph{The \LaTeX\ Companion}.
-            Addison-Wesley, 1994.
+        \bibitem{cgov}
+        National Cancer Institute, \href{https://www.cancer.gov}{www.cancer.gov}
         \bibitem{tantau04}
             Till~Tantau.
             \emph{User's Guide to the Beamer Class Version 3.01}.
