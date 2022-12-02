@@ -49,7 +49,18 @@ get us closer to the expected output. \\
 Let's look at an example. \\
 We have some white and black points in a cartesian plane. \\
 Let's say we want to develop an algorithm that takes a coordinates
-of a point and output whether it is likely to be white or black.
+of a point and output whether it is likely to be white or black. \\
+What we need here is a new representation of our data that cleanly 
+separates the white points  from  the  black  points. \\
+One  possible transformation is a coordinate change. \\
+In this new coordinate system, the white points have the \textbf{feature}
+$x < 0$ and the black points have the \textbf{feature} $x > 0$. \\
+In this case we defined the coordinate change by hand: 
+we used our human intelli-gence to come up with our 
+own appropriate representation of the data. This 
+is fine for such an extremely simple problem, 
+but could you do the same if the task were to 
+clas-sify images of handwritten digits?
 
 \section*{What Is Cancer ?}
 Cancer is a disease in which some of the body’s 
