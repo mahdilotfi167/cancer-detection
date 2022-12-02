@@ -46,60 +46,45 @@
     \end{frame}
     \subsection{Types of Learning}
     \begin{frame}[label=lists]{Types of Machine Learning Systems}
-      There are four types of machine learning algorithms:
-      \newline
+      \framesubtitle{There are four types of machine learning algorithms}
       \begin{columns}[onlytextwidth]
         \column{.7\textwidth}
           \begin{itemize}
-            \item Supervised Machine Learning
-            \item Unsupervised Machine Learning
-            \item Semi-Supervised Machine Learning
-            \item Reinforcement Learning
+            \item \hyperlink{sml}{Supervised Machine Learning}
+            \item \hyperlink{uml}{Unsupervised Machine Learning}
+            \item \hyperlink{ssml}{Semi-Supervised Machine Learning}
+            \item \hyperlink{rl}{Reinforcement Learning}
             \end{itemize}
       \end{columns}
       
     \end{frame} 
     
-    \begin{frame}[t]{Supervised Machine Learning}
-      \justifying It is based on training data. we train the machines using the "labeled" dataset, and based on the training, the machine predicts the output. 
-    
-      \begin{tikzpicture}[overlay,remember picture]
-        \node[anchor=south east,xshift=-20pt,yshift=30pt]
-          at (current page.south east) {
-            \includegraphics[width=100mm,height=40mm]{resources/supervised-machine-learning}
-          };
-      \end{tikzpicture}%
+    \begin{frame}[label=sml]{Supervised Machine Learning}
+      \justifying It is based on training data. we train the machines using the \emph{labeled} dataset, and based on the training, the machine predicts the output. \\
+      \vfill
+      \centering 
+        \includegraphics[height=36mm]{resources/supervised-machine-learning}
     \end{frame}
     
-    \begin{frame}[t]{Unsupervised Machine Learning}
-      \justifying It is a machine learning technique in which models are not supervised using the training dataset.in that case, it uses the hidden patterns and insights from the given data.
-    
-      \begin{tikzpicture}[overlay,remember picture]
-        \node[anchor=south east,xshift=-40pt,yshift=25pt]
-          at (current page.south east) {
-            \includegraphics[width=100mm,height=40mm]{resources/unsupervied-machine-learning}
-          };
-      \end{tikzpicture}%
+    \begin{frame}[label=uml]{Unsupervised Machine Learning}
+      \justifying It is a machine learning technique in which models are not supervised using the training dataset. In that case, it uses the hidden patterns and insights from the given data.
+      \vfill
+      \centering
+      \includegraphics[height=36mm]{resources/unsupervied-machine-learning}
     \end{frame}
     
-    \begin{frame}[t]{Semi-Supervised Machine Learning}
-      \justifying It is a type of Machine Learning algorithm that comes between Supervised and Unsupervised machine learning.
-      \begin{tikzpicture}[overlay,remember picture]
-        \node[anchor=south east,xshift=-25pt,yshift=40pt]
-          at (current page.south east) {
-            \includegraphics[width=100mm,height=40mm]{resources/semisupervised-machine-learning}
-          };
-      \end{tikzpicture}%
+    \begin{frame}[label=ssml]{Semi-Supervised Machine Learning}
+      It is a type of Machine Learning algorithm that comes between Supervised and Unsupervised machine learning.
+      \vfill
+      \centering
+            \includegraphics[height=40mm]{resources/semisupervised-machine-learning}
     \end{frame}
 
-    \begin{frame}[t]{Reinforcement Learning}
+    \begin{frame}[label=rl]{Reinforcement Learning}
       \justifying It is a type of Machine Learning that works on a feedback-based process, in which an AI agent (A software component) automatically explore its surrounding by learning from experiences, and improving its performance.
-      \begin{tikzpicture}[overlay,remember picture]
-        \node[anchor=south east,xshift=-50pt,yshift=10pt]
-          at (current page.south east) {
-            \includegraphics[width=90mm,height=45mm]{resources/reinforcement}
-          };
-      \end{tikzpicture}%
+      \vfill
+      \centering
+            \includegraphics[height=40mm]{resources/reinforcement}
     \end{frame}  
     
     \begin{frame}{Artificial Intelligence Hierarchy}
@@ -135,7 +120,7 @@
     \item Sarcomas, a malignant tumor.
     \item Leukemias, a group of blood cancers.
           \begin{itemize}
-            \item Acute Lyphoblastic Leukemia
+            \item \hyperlink{all}{Acute Lyphoblastic Leukemia}
           \end{itemize}
     \item Lymphomas, a group of blood and lymph tumors.
   \end{itemize}
