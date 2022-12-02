@@ -10,8 +10,15 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: law-pdflatex.tex
+      - name: Compile Instructions
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: sample-bookchapter.tex
+          working_directory: instructions
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: law-pdflatex.pdf
+          path: |
+            law-pdflatex.pdf
+            instructions/sample-bookchapter.pdf
