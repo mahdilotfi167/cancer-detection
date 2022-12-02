@@ -27,7 +27,7 @@
     \section{Machine Learning}
     \subsection{What Is Machine Learning}
     \begin{frame}[t]{Machine Learning}
-      \framesubtitle{a slightly general definition}%
+      \framesubtitle{a glance}%
       \begin{tikzpicture}[overlay,remember picture]
         \node[anchor=south east,xshift=-30pt,yshift=35pt]
           at (current page.south east) {
@@ -46,35 +46,62 @@
     \end{frame}
     \subsection{Types of Learning}
     \begin{frame}[label=lists]{Types of Machine Learning Systems}
-      \framesubtitle{it is useful to classify ML algorithms in broad categories}
+      There are four types of machine learning algorithms:
+      \newline
       \begin{columns}[onlytextwidth]
-        \column{.5\textwidth}
+        \column{.7\textwidth}
           \begin{itemize}
-            \item Nulla nec lacinia odio. Curabitur urna tellus.
-            \begin{itemize}
-              \item Fusce id sodales dolor. Sed id metus dui.
-              \begin{itemize}
-                \item Cupio virtus licet mi vel feugiat.
-              \end{itemize}
+            \item Supervised Machine Learning
+            \item Unsupervised Machine Learning
+            \item Semi-Supervised Machine Learning
+            \item Reinforcement Learning
             \end{itemize}
-          \end{itemize}
-        \column{.5\textwidth}
-          \begin{enumerate}
-            \item Donec porta, risus porttitor egestas scelerisque video.
-            \begin{enumerate}
-              \item Nunc non ante fringilla, manus potentis cario.
-              \begin{enumerate}
-                \item Pellentesque servus morbi tristique.
-              \end{enumerate}
-            \end{enumerate}
-          \end{enumerate}
       \end{columns}
-      \bigskip
-      \justifying
-      {\uselanguage{english}The quick, brown fox jumps over a lazy
-      dog. DJs flock by when MTV ax quiz prog. “Now fax quiz Jack!”}
+      
     \end{frame} 
+    
+    \begin{frame}[t]{Supervised Machine Learning}
+      \justifying It is based on training data. we train the machines using the "labeled" dataset, and based on the training, the machine predicts the output. 
+    
+      \begin{tikzpicture}[overlay,remember picture]
+        \node[anchor=south east,xshift=-20pt,yshift=30pt]
+          at (current page.south east) {
+            \includegraphics[width=100mm,height=40mm]{resources/supervised-machine-learning}
+          };
+      \end{tikzpicture}%
+    \end{frame}
+    
+    \begin{frame}[t]{Unsupervised Machine Learning}
+      \justifying It is a machine learning technique in which models are not supervised using the training dataset.in that case, it uses the hidden patterns and insights from the given data.
+    
+      \begin{tikzpicture}[overlay,remember picture]
+        \node[anchor=south east,xshift=-40pt,yshift=25pt]
+          at (current page.south east) {
+            \includegraphics[width=100mm,height=40mm]{resources/unsupervied-machine-learning}
+          };
+      \end{tikzpicture}%
+    \end{frame}
+    
+    \begin{frame}[t]{Semi-Supervised Machine Learning}
+      \justifying It is a type of Machine Learning algorithm that comes between Supervised and Unsupervised machine learning.
+      \begin{tikzpicture}[overlay,remember picture]
+        \node[anchor=south east,xshift=-25pt,yshift=40pt]
+          at (current page.south east) {
+            \includegraphics[width=100mm,height=40mm]{resources/semisupervised-machine-learning}
+          };
+      \end{tikzpicture}%
+    \end{frame}
 
+    \begin{frame}[t]{Reinforcement Learning}
+      \justifying It is a type of Machine Learning that works on a feedback-based process, in which an AI agent (A software component) automatically explore its surrounding by learning from experiences, and improving its performance.
+      \begin{tikzpicture}[overlay,remember picture]
+        \node[anchor=south east,xshift=-50pt,yshift=10pt]
+          at (current page.south east) {
+            \includegraphics[width=90mm,height=45mm]{resources/reinforcement}
+          };
+      \end{tikzpicture}%
+    \end{frame}  
+    
     \begin{frame}{Artificial Intelligence Hierarchy}
         \includegraphics{resources/hierarchy}
     \end{frame}
